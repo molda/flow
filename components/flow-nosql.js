@@ -11,7 +11,7 @@ function nosqlgetcomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('nosqlget', nosqlgetcomponent);
+FLOW.registerComponent('nosqlget', nosqlgetcomponent);
 
 function nosqlquerycomponent() {
 	var self = this;
@@ -23,7 +23,7 @@ function nosqlquerycomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('nosqlquery', nosqlquerycomponent);
+FLOW.registerComponent('nosqlquery', nosqlquerycomponent);
 
 function nosqlinsertcomponent() {
 	var self = this;
@@ -35,7 +35,7 @@ function nosqlinsertcomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('nosqlinsert', nosqlinsertcomponent);
+FLOW.registerComponent('nosqlinsert', nosqlinsertcomponent);
 
 function nosqlupdatecomponent() {
 	var self = this;
@@ -47,7 +47,7 @@ function nosqlupdatecomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('nosqlupdate', nosqlupdatecomponent);
+FLOW.registerComponent('nosqlupdate', nosqlupdatecomponent);
 
 function nosqlremovecomponent() {
 	var self = this;
@@ -59,6 +59,6 @@ function nosqlremovecomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('nosqlremove', nosqlremovecomponent);
+FLOW.registerComponent('nosqlremove', nosqlremovecomponent);
 
 

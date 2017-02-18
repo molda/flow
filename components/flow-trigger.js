@@ -30,4 +30,4 @@ function triggercomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('trigger', triggercomponent);
+FLOW.registerComponent('trigger', triggercomponent);

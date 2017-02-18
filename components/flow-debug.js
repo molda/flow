@@ -1,6 +1,5 @@
 exports.group = 'flow';
 
-
 function debugcomponent() {
 	var self = this;
 
@@ -10,4 +9,4 @@ function debugcomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('debug', debugcomponent);
+FLOW.registerComponent('debug', debugcomponent);

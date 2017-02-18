@@ -29,4 +29,4 @@ function rangecomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('range', rangecomponent);
+FLOW.registerComponent('range', rangecomponent);

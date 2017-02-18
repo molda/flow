@@ -14,4 +14,4 @@ function timercomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('timer', timercomponent);
+FLOW.registerComponent('timer', timercomponent);

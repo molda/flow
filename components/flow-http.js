@@ -1,6 +1,5 @@
 exports.group = 'flow';
 
-// definice komponenty - hhtp route
 function httpcomponent() {
 	var self = this;
 
@@ -29,10 +28,8 @@ function httpcomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('http', httpcomponent);
+FLOW.registerComponent('http', httpcomponent);
 
-
-// definice komponenty - http response
 function httpresponsecomponent() {
 	var self = this;
 
@@ -43,4 +40,4 @@ function httpresponsecomponent() {
 
 	return self;
 }
-//FLOW.registerComponent('httpresponse', httpresponsecomponent);
+FLOW.registerComponent('httpresponse', httpresponsecomponent);
