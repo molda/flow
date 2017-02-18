@@ -1,0 +1,23 @@
+<template data-component="trigger">
+
+    <div data-jc-scope="{0}">
+        <div data-jc="dropdown" data-jc-path="datatype" data-options=";String|string;Integer|integer;Float|float;Object|object;Boolean|boolean">Data type</div>
+        <div data-jc="textbox" data-jc-path="data" data-placeholder="e.g. Hello world or { hello: 'world'} or [ 'hello', 'world']">Data</div>
+    </div>
+
+</template>
+
+
+
+<script>
+    
+    FLOW.registerComponent({
+        component: 'trigger',
+        title: 'Trigger',
+        color: 'blue',
+        input: false,
+        outputs: 1,
+
+    });
+
+</script>

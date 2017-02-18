@@ -1,0 +1,57 @@
+<template id="component-http-route">
+
+    <div data-jc-scope="{0}"><!-- {0} nahradit skutečným ID komponenty -->
+        <div data-jc="textbox" data-jc-path="url" data-placeholder="/some/url">URL</div><!-- path === window.components.<komponentid>.url -->
+        <div data-jc="dropdown" data-jc-path="method" data-options=";GET|get;POST|post;PUT|put;DEL|delete">URL</div>
+    </div>
+
+</template>
+
+<template id="help-http-route">
+
+## HTTP Route
+
+Creates a route and upon request generates new message with following props
+
+- controller -> (instance of controller)[https://docs.totaljs.com/latest/en.html#api~FrameworkController]
+- data -> query for GET request, body for POST
+
+</template>
+
+<template id="component-http-response">
+
+    <div data-jc-scope="{0}">
+        <div data-jc="textbox" data-jc-path="return" data-placeholder="msg.data">Return property</div>
+    </div>
+
+</template>
+
+<template id="help-http-response">
+
+
+
+</template>
+
+
+
+<script>
+    
+    FLOW.registerComponent({
+        component: 'http-route',
+        title: 'HTTP Route',
+        color: 'purple',
+        input: false,
+        outputs: 1,
+
+    });
+    
+    FLOW.registerComponent({
+        component: 'http-response',
+        title: 'HTTP Response',
+        color: 'purple',
+        input: true,
+        outputs: false,
+
+    });
+
+</script>

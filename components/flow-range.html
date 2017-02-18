@@ -1,0 +1,27 @@
+<template data-component="range">
+
+    <div data-jc-scope="{0}">
+        <div data-jc="textbox" data-jc-path="input_min">Input min (defaults to 0)</div>
+        <div data-jc="textbox" data-jc-path="input_max">Input max (defaults to 1023)</div>
+        <div data-jc="textbox" data-jc-path="output_min">Output min (defaults to 0)</div>
+        <div data-jc="textbox" data-jc-path="output_max">Output max (defaults to 100)</div>
+    </div>
+
+</template>
+
+
+
+<script>
+    
+    FLOW.registerComponent({
+        component: 'range',
+        title: 'Range',
+        color: 'orange',
+        input: 1,
+        outputs: 1,
+        onClick: function(id){
+            FLOW.server.send({target: id, eventName: 'range'});
+        }
+    });
+
+</script>
